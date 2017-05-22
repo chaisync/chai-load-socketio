@@ -1,0 +1,11 @@
+{
+  "name": "chai-load-socketio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "load": "artillery run load_chaisync_12000users_1min.yaml"
+  },
+  "author": "",
+  "license": "ISC"
+}

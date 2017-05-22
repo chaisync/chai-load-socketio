@@ -1,0 +1,17 @@
+# Load the server with 6000 users in 1 minute
+# load_chaisync_6000users_1min.yaml
+
+config:
+  target: "http://52.25.16.68:8080"
+  phases:
+    -
+      duration: 60      # seconds
+      arrivalRate: 100  # users / sec
+
+scenarios:
+- name: "A simple loopback test"
+  engine: "socketio"
+  flow:
+    - emit:
+        channel: "echo"
+        data: "hello"
